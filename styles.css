@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #FF671F 0%,white, #046A38 100%);
+  /* color: #222; */
+  font-size: 1rem;
+}
+
+
+.container{
+  margin-left: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 100vh;
+}
+.sliding-text{
+  margin-top: 250px;
+  position: absolute;
+  font-size: 4rem;
+  color: #06038D;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.text-2{
+  margin-top: 100px;
+  position: absolute;
+  font-size: 4rem;
+  color: #06038D;
+}
+
+.temperature-converter {
+  background: #FFFFFF;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 25px 45px;
+  min-width: 320px;
+  width: 100%;
+  height: inherit;
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(21px);
+}
+
+.title {
+  color: #222;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.result {
+  text-align: center;
+  margin: 20px 0;
+}
+.result-heading {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.celsius-value {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  transition: all .45s ease;
+  color: #0daf0a;
+}
+label {
+  color: #000000;
+  font-size: 1rem;
+  margin-left: 10px;
+  
+}
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+input:focus {
+  border: 1px solid #4c49f3;
+}
+.degree-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.degree-field {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+.temp-field {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+option {
+  background-color: white;
+  color: black;
+}
+#convert-btn {
+  background: linear-gradient(to bottom, #5ea2ea, #06038D);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  padding: 12px 80px;
+  transition: all 0.3s ease-in;
+}
+#convert-btn:hover {
+  background: linear-gradient(to bottom, #5ea2ea, #06038D);
+}
+
+/* Add a right margin to each icon */
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+.loading {
+  display: none;
+}
